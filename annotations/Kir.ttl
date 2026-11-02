@@ -1,0 +1,34 @@
+# The Kir transporter; _i is the cytoplasm, _o the extracellular side.
+@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
+@prefix opb: <http://identifiers.org/opb/OPB_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix go: <http://purl.obolibrary.org/obo/GO_> .
+@prefix sbo: <http://purl.obolibrary.org/obo/SBO_> .
+@prefix uniprot: <http://identifiers.org/uniprot/> .
+@prefix m: <./Kir.cellml#> .
+@prefix local: <./Kir.ttl#> .
+
+m:Kir bqbiol:is uniprot:O60928 ;
+    bqbiol:isVersionOf go:0005242 .
+
+m:vih9ubdu7 bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vih9ubdu7 .
+local:entity_vih9ubdu7 bqbiol:is chebi:29103 , go:0005737 .
+m:v3sjozu5o bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_v3sjozu5o .
+local:entity_v3sjozu5o bqbiol:is chebi:29103 , go:0005576 .
+m:vuhgy08cr bqbiol:isVersionOf opb:00295 ;
+    bqbiol:isPropertyOf local:entity_vuhgy08cr .
+local:entity_vuhgy08cr bqbiol:is go:0005886 .
+m:vprh1t4fr bqbiol:isVersionOf opb:00506 ;
+    bqbiol:isPropertyOf local:entity_vprh1t4fr .
+local:entity_vprh1t4fr bqbiol:is go:0005886 .
+m:vb0p87qrp bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_vb0p87qrp .
+local:entity_vb0p87qrp bqbiol:is chebi:29103 , go:0005737 .
+m:vp55np02w bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_vp55np02w .
+local:entity_vp55np02w bqbiol:is chebi:29103 , go:0005576 .
+m:v9xhn7nv1 bqbiol:isVersionOf opb:00318 ;
+    bqbiol:isPropertyOf local:entity_v9xhn7nv1 .
+local:entity_v9xhn7nv1 bqbiol:is go:0005886 .

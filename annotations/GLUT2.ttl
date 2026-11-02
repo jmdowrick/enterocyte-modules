@@ -1,0 +1,28 @@
+# The GLUT2 transporter; _i is the cytoplasm, _o the extracellular side.
+@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
+@prefix opb: <http://identifiers.org/opb/OPB_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix go: <http://purl.obolibrary.org/obo/GO_> .
+@prefix sbo: <http://purl.obolibrary.org/obo/SBO_> .
+@prefix uniprot: <http://identifiers.org/uniprot/> .
+@prefix m: <./GLUT2.cellml#> .
+@prefix local: <./GLUT2.ttl#> .
+
+m:GLUT2 bqbiol:is uniprot:P11168 ;
+    bqbiol:isVersionOf go:0055056 .
+
+m:vfwllf3dn bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vfwllf3dn .
+local:entity_vfwllf3dn bqbiol:is chebi:17634 , go:0005737 .
+m:v5f0sesm6 bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_v5f0sesm6 .
+local:entity_v5f0sesm6 bqbiol:is chebi:17634 , go:0005576 .
+m:v83toq09x bqbiol:isVersionOf opb:00295 ;
+    bqbiol:isPropertyOf local:entity_v83toq09x .
+local:entity_v83toq09x bqbiol:is go:0005886 .
+m:v9c72o5p5 bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_v9c72o5p5 .
+local:entity_v9c72o5p5 bqbiol:is chebi:17634 , go:0005737 .
+m:vfvt092jj bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_vfvt092jj .
+local:entity_vfvt092jj bqbiol:is chebi:17634 , go:0005576 .

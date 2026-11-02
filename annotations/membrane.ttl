@@ -1,0 +1,16 @@
+# The plasma membrane of wherever the instance is.
+@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
+@prefix opb: <http://identifiers.org/opb/OPB_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix go: <http://purl.obolibrary.org/obo/GO_> .
+@prefix sbo: <http://purl.obolibrary.org/obo/SBO_> .
+@prefix uniprot: <http://identifiers.org/uniprot/> .
+@prefix m: <./membrane.cellml#> .
+@prefix local: <./membrane.ttl#> .
+
+m:membrane bqbiol:is go:0005886 .
+
+m:vrmrzvst2 bqbiol:isVersionOf opb:00506 ;
+    bqbiol:isPropertyOf m:membrane .
+m:vw3gp441u bqbiol:isVersionOf opb:00318 ;
+    bqbiol:isPropertyOf m:membrane .

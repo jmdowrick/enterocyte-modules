@@ -1,0 +1,68 @@
+# The NKA transporter; _i is the cytoplasm, _o the extracellular side.
+@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
+@prefix opb: <http://identifiers.org/opb/OPB_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix go: <http://purl.obolibrary.org/obo/GO_> .
+@prefix sbo: <http://purl.obolibrary.org/obo/SBO_> .
+@prefix uniprot: <http://identifiers.org/uniprot/> .
+@prefix m: <./NKA.cellml#> .
+@prefix local: <./NKA.ttl#> .
+
+m:NKA bqbiol:is uniprot:P05023 ;
+    bqbiol:isVersionOf go:0005391 ;
+    bqbiol:isVersionOf go:0006096 .
+
+m:vcdmrbcv2 bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vcdmrbcv2 .
+local:entity_vcdmrbcv2 bqbiol:is chebi:29101 , go:0005576 .
+m:v5eu9sad5 bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_v5eu9sad5 .
+local:entity_v5eu9sad5 bqbiol:is chebi:29103 , go:0005576 .
+m:vhdqyqaec bqbiol:isVersionOf opb:00154 ;
+    bqbiol:isPropertyOf local:entity_vhdqyqaec .
+local:entity_vhdqyqaec bqbiol:is go:0005576 .
+m:vorzekzrl bqbiol:isVersionOf opb:00154 ;
+    bqbiol:isPropertyOf local:entity_vorzekzrl .
+local:entity_vorzekzrl bqbiol:is go:0005737 .
+m:vtwj4l11i bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vtwj4l11i .
+local:entity_vtwj4l11i bqbiol:is chebi:29101 , go:0005737 .
+m:vde5xfswr bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vde5xfswr .
+local:entity_vde5xfswr bqbiol:is chebi:29103 , go:0005737 .
+m:vnsyv8q9l bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vnsyv8q9l .
+local:entity_vnsyv8q9l bqbiol:is chebi:15378 , go:0005737 .
+m:vfo61piys bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vfo61piys .
+local:entity_vfo61piys bqbiol:is chebi:16761 , go:0005737 .
+m:vamiydje5 bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vamiydje5 .
+local:entity_vamiydje5 bqbiol:is chebi:43474 , go:0005737 .
+m:vb70bkadw bqbiol:isVersionOf opb:00340 ;
+    bqbiol:isPropertyOf local:entity_vb70bkadw .
+local:entity_vb70bkadw bqbiol:is chebi:15422 , go:0005737 .
+m:vekyxzuo0 bqbiol:isVersionOf opb:00295 ;
+    bqbiol:isPropertyOf local:entity_vekyxzuo0 .
+local:entity_vekyxzuo0 bqbiol:is go:0005886 .
+m:v61lrw8b5 bqbiol:isVersionOf opb:00506 ;
+    bqbiol:isPropertyOf local:entity_v61lrw8b5 .
+local:entity_v61lrw8b5 bqbiol:is go:0005886 .
+m:vptaxby8s bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_vptaxby8s .
+local:entity_vptaxby8s bqbiol:is chebi:17634 , go:0005737 .
+m:v37psudg5 bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_v37psudg5 .
+local:entity_v37psudg5 bqbiol:is chebi:29101 , go:0005737 .
+m:vx1p9wrux bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_vx1p9wrux .
+local:entity_vx1p9wrux bqbiol:is chebi:29103 , go:0005737 .
+m:vuuyeeqku bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_vuuyeeqku .
+local:entity_vuuyeeqku bqbiol:is chebi:29101 , go:0005576 .
+m:vrdncxnf9 bqbiol:isVersionOf opb:00592 ;
+    bqbiol:isPropertyOf local:entity_vrdncxnf9 .
+local:entity_vrdncxnf9 bqbiol:is chebi:29103 , go:0005576 .
+m:vqo8cs21i bqbiol:isVersionOf opb:00318 ;
+    bqbiol:isPropertyOf local:entity_vqo8cs21i .
+local:entity_vqo8cs21i bqbiol:is go:0005886 .
