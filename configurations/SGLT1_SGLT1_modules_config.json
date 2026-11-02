@@ -1,0 +1,128 @@
+[
+  {
+    "module_type": "SGLT1",
+    "module_subtype": "SGLT1",
+    "module_format": "cellml",
+    "component_file": "SGLT1.cellml",
+    "component_type": "SGLT1",
+    "default_parameterisation": "SGLT1",
+    "licence": "Apache-2.0",
+    "creator": [],
+    "required_citations": [],
+    "entrance_ports": [],
+    "exit_ports": [],
+    "general_ports": [
+      {
+        "port_type": "v_tot",
+        "variables": [
+          "v_e_SGLT1"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "u_e_m",
+        "variables": [
+          "u_e"
+        ]
+      },
+      {
+        "port_type": "c_Glc_int",
+        "variables": [
+          "c_Glc_i"
+        ]
+      },
+      {
+        "port_type": "c_Na_int",
+        "variables": [
+          "c_Na_i"
+        ]
+      },
+      {
+        "port_type": "area",
+        "variables": [
+          "area"
+        ]
+      },
+      {
+        "port_type": "v_Glc_int",
+        "variables": [
+          "v_Glc_i"
+        ]
+      },
+      {
+        "port_type": "v_Na_int",
+        "variables": [
+          "v_Na_i"
+        ]
+      },
+      {
+        "port_type": "c_Glc_lum",
+        "variables": [
+          "c_Glc_o"
+        ]
+      },
+      {
+        "port_type": "c_Na_lum",
+        "variables": [
+          "c_Na_o"
+        ]
+      },
+      {
+        "port_type": "W_lum",
+        "variables": [
+          "W_o"
+        ]
+      },
+      {
+        "port_type": "W_int",
+        "variables": [
+          "W_i"
+        ]
+      }
+    ],
+    "variables_and_units": [
+      ["q_Na_o", "fmol", "access", "variable"],
+      ["c_Na_o", "mM", "access", "boundary_condition"],
+      ["W_o", "pL", "access", "boundary_condition"],
+      ["q_Na_i", "fmol", "access", "variable"],
+      ["c_Na_i", "mM", "access", "boundary_condition"],
+      ["W_i", "pL", "access", "boundary_condition"],
+      ["q_Glc_o", "fmol", "access", "variable"],
+      ["c_Glc_o", "mM", "access", "boundary_condition"],
+      ["q_Glc_i", "fmol", "access", "variable"],
+      ["c_Glc_i", "mM", "access", "boundary_condition"],
+      ["q_bar_Na_o", "dim", "access", "variable"],
+      ["K_Na_o", "per_fmol", "access", "constant"],
+      ["q_bar_Na_i", "dim", "access", "variable"],
+      ["K_Na_i", "per_fmol", "access", "constant"],
+      ["q_bar_Glc_o", "dim", "access", "variable"],
+      ["K_Glc_o", "per_fmol", "access", "constant"],
+      ["q_bar_Glc_i", "dim", "access", "variable"],
+      ["K_Glc_i", "per_fmol", "access", "constant"],
+      ["Phi", "dim", "access", "variable"],
+      ["z1", "dim", "access", "constant"],
+      ["u_e", "J_per_C", "access", "boundary_condition"],
+      ["RTF", "J_per_C", "access", "global_constant"],
+      ["K_1", "per_fmol", "access", "constant"],
+      ["K_2", "per_fmol", "access", "constant"],
+      ["K_3", "per_fmol", "access", "constant"],
+      ["z2", "dim", "access", "constant"],
+      ["kappa_6", "fmol_per_s", "access", "constant"],
+      ["kappa_3", "fmol_per_s", "access", "constant"],
+      ["K_6", "per_fmol", "access", "constant"],
+      ["K_5", "per_fmol", "access", "constant"],
+      ["K_4", "per_fmol", "access", "constant"],
+      ["v_raw", "fmol_per_mm2_per_s", "access", "variable"],
+      ["kappa", "fmol_per_s", "access", "constant"],
+      ["area", "mm2", "access", "boundary_condition"],
+      ["v_SGLT1", "fmol_per_mm2_per_s", "access", "variable"],
+      ["Scale_SGLT1", "dim", "access", "constant"],
+      ["v_Glc_o", "fmol_per_mm2_per_s", "access", "variable"],
+      ["v_Glc_i", "fmol_per_mm2_per_s", "access", "variable"],
+      ["v_Na_o", "fmol_per_mm2_per_s", "access", "variable"],
+      ["v_Na_i", "fmol_per_mm2_per_s", "access", "variable"],
+      ["v_e_SGLT1", "pA_per_mm2", "access", "variable"],
+      ["F", "C_per_mol", "access", "global_constant"]
+    ]
+  }
+]

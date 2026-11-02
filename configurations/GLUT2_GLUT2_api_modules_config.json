@@ -1,0 +1,56 @@
+[
+  {
+    "module_type": "GLUT2",
+    "module_subtype": "GLUT2_api",
+    "module_format": "cellml",
+    "component_file": "GLUT2.cellml",
+    "component_type": "GLUT2",
+    "default_parameterisation": "GLUT2_api",
+    "licence": "Apache-2.0",
+    "creator": [],
+    "required_citations": [],
+    "entrance_ports": [],
+    "exit_ports": [],
+    "general_ports": [
+      {
+        "port_type": "c_Glc_int",
+        "variables": [
+          "c_Glc_i"
+        ]
+      },
+      {
+        "port_type": "c_Glc_lum",
+        "variables": [
+          "c_Glc_o"
+        ]
+      },
+      {
+        "port_type": "area",
+        "variables": [
+          "area"
+        ]
+      },
+      {
+        "port_type": "v_Glc_int",
+        "variables": [
+          "v_GLUT2_i"
+        ]
+      }
+    ],
+    "variables_and_units": [
+      ["Phi_GLUT2", "dim", "access", "variable"],
+      ["c_Glc_i", "mM", "access", "boundary_condition"],
+      ["K_i", "mM", "access", "constant"],
+      ["c_Glc_o", "mM", "access", "boundary_condition"],
+      ["K_o", "mM", "access", "constant"],
+      ["k_io", "mM2", "access", "constant"],
+      ["v_GLUT2_raw", "fmol_per_mm2_per_s", "access", "variable"],
+      ["kappa_GLUT2", "pL_per_s", "access", "constant"],
+      ["area", "mm2", "access", "boundary_condition"],
+      ["v_GLUT2", "fmol_per_mm2_per_s", "access", "variable"],
+      ["Scale_GLUT2", "dim", "access", "constant"],
+      ["v_GLUT2_o", "fmol_per_mm2_per_s", "access", "variable"],
+      ["v_GLUT2_i", "fmol_per_mm2_per_s", "access", "variable"]
+    ]
+  }
+]

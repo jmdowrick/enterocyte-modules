@@ -1,0 +1,74 @@
+[
+  {
+    "module_type": "Kir",
+    "module_subtype": "Kir",
+    "module_format": "cellml",
+    "component_file": "Kir.cellml",
+    "component_type": "Kir",
+    "default_parameterisation": "Kir",
+    "licence": "Apache-2.0",
+    "creator": [],
+    "required_citations": [],
+    "entrance_ports": [],
+    "exit_ports": [],
+    "general_ports": [
+      {
+        "port_type": "v_tot",
+        "variables": [
+          "v_e_Kir"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "u_e_m",
+        "variables": [
+          "u_e"
+        ]
+      },
+      {
+        "port_type": "c_K_cap",
+        "variables": [
+          "c_K_o"
+        ]
+      },
+      {
+        "port_type": "c_K_int",
+        "variables": [
+          "c_K_i"
+        ]
+      },
+      {
+        "port_type": "area",
+        "variables": [
+          "area"
+        ]
+      },
+      {
+        "port_type": "v_K_int",
+        "variables": [
+          "v_K_Kir_i"
+        ]
+      }
+    ],
+    "variables_and_units": [
+      ["Phi_Kir", "dim", "no_access", "variable"],
+      ["c_K_i", "mM", "access", "boundary_condition"],
+      ["K_i_Kir", "mM", "access", "constant"],
+      ["c_K_o", "mM", "access", "boundary_condition"],
+      ["K_o_Kir", "mM", "access", "constant"],
+      ["z6_Kir", "dim", "access", "constant"],
+      ["u_e", "J_per_C", "access", "boundary_condition"],
+      ["RTF", "J_per_C", "access", "global_constant"],
+      ["v_Kir_raw", "fmol_per_mm2_per_s", "access", "variable"],
+      ["kappa_Kir", "pL_per_s", "access", "constant"],
+      ["area", "mm2", "access", "boundary_condition"],
+      ["v_Kir", "fmol_per_mm2_per_s", "access", "variable"],
+      ["Scale_Kir", "dim", "access", "constant"],
+      ["v_K_Kir_i", "fmol_per_mm2_per_s", "access", "variable"],
+      ["v_K_Kir_o", "fmol_per_mm2_per_s", "access", "variable"],
+      ["v_e_Kir", "pA_per_mm2", "access", "variable"],
+      ["F", "C_per_mol", "access", "global_constant"],
+      ["u_rev_Kir", "J_per_C", "access", "variable"]
+    ]
+  }
+]

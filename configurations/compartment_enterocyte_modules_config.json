@@ -1,0 +1,128 @@
+[
+  {
+    "module_type": "compartment",
+    "module_subtype": "enterocyte",
+    "module_format": "cellml",
+    "component_file": "compartment.cellml",
+    "component_type": "compartment",
+    "default_parameterisation": "enterocyte",
+    "licence": "Apache-2.0",
+    "creator": [],
+    "required_citations": [],
+    "entrance_ports": [],
+    "exit_ports": [],
+    "general_ports": [
+      {
+        "port_type": "area",
+        "variables": [
+          "area"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "v_Glc_int",
+        "variables": [
+          "v_Glc"
+        ],
+        "multi_port": "Sum"
+      },
+      {
+        "port_type": "W_int",
+        "variables": [
+          "volume"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "c_Glc_int",
+        "variables": [
+          "c_Glc"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "c_Na_int",
+        "variables": [
+          "c_Na"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "c_K_int",
+        "variables": [
+          "c_K"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "v_K_int",
+        "variables": [
+          "v_K"
+        ],
+        "multi_port": "Sum"
+      },
+      {
+        "port_type": "c_H_int",
+        "variables": [
+          "c_H"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "c_ADP_int",
+        "variables": [
+          "c_ADP"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "c_Pi_int",
+        "variables": [
+          "c_Pi"
+        ],
+        "multi_port": "True"
+      },
+      {
+        "port_type": "v_Na_int",
+        "variables": [
+          "v_Na"
+        ],
+        "multi_port": "Sum"
+      },
+      {
+        "port_type": "c_ATP_int",
+        "variables": [
+          "c_ATP"
+        ],
+        "multi_port": "True"
+      }
+    ],
+    "variables_and_units": [
+      ["Gamma", "mm2_per_pL", "access", "variable"],
+      ["area", "mm2", "access", "constant"],
+      ["volume", "pL", "access", "constant"],
+      ["c_H", "mM", "access", "variable"],
+      ["pH", "dim", "access", "constant"],
+      ["q_Na", "fmol", "access", "variable"],
+      ["c_Na", "mM", "access", "variable"],
+      ["q_Glc", "fmol", "access", "variable"],
+      ["c_Glc", "mM", "access", "variable"],
+      ["q_K", "fmol", "access", "variable"],
+      ["c_K", "mM", "access", "variable"],
+      ["q_ATP", "fmol", "access", "variable"],
+      ["c_ATP", "mM", "access", "constant"],
+      ["q_ADP", "fmol", "access", "variable"],
+      ["c_ADP", "mM", "access", "constant"],
+      ["q_Pi", "fmol", "access", "variable"],
+      ["c_Pi", "mM", "access", "constant"],
+      ["q_H", "fmol", "access", "variable"],
+      ["t", "second", "access", "variable"],
+      ["v_Na", "fmol_per_mm2_per_s", "access", "boundary_condition"],
+      ["v_Glc", "fmol_per_mm2_per_s", "access", "boundary_condition"],
+      ["v_K", "fmol_per_mm2_per_s", "access", "boundary_condition"],
+      ["c_Na_init", "mM", "access", "constant"],
+      ["c_Glc_init", "mM", "access", "constant"],
+      ["c_K_init", "mM", "access", "constant"]
+    ]
+  }
+]
