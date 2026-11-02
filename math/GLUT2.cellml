@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.cellml.org/cellml/2.0#" name="GLUT2">
+  <units name="dim">
+    <unit units="dimensionless"/>
+  </units>
+  <units name="mM">
+    <unit units="mole" prefix="milli"/>
+    <unit units="litre" exponent="-1"/>
+  </units>
+  <units name="fmol_per_mm2_per_s">
+    <unit units="fmol"/>
+    <unit units="mm2" exponent="-1"/>
+    <unit units="second" exponent="-1"/>
+  </units>
+  <units name="pL_per_s">
+    <unit units="pL"/>
+    <unit units="second" exponent="-1"/>
+  </units>
+  <units name="mm2">
+    <unit units="metre" prefix="milli" exponent="2"/>
+  </units>
+  <units name="fmol">
+    <unit units="mole" prefix="femto"/>
+  </units>
+  <units name="pL">
+    <unit units="litre" prefix="pico"/>
+  </units>
+  <units name="mM2">
+    <unit units="mM" exponent="2"/>
+  </units>
+  <component name="GLUT2">
+    <variable name="Phi_GLUT2" units="dim" interface="public"/>
+    <variable name="c_Glc_i" units="mM" interface="public" id="vfwllf3dn"/>
+    <variable name="K_i" units="mM" interface="public"/>
+    <variable name="c_Glc_o" units="mM" interface="public" id="v5f0sesm6"/>
+    <variable name="K_o" units="mM" interface="public"/>
+    <variable name="k_io" units="mM2" interface="public"/>
+    <variable name="v_GLUT2_raw" units="fmol_per_mm2_per_s" interface="public"/>
+    <variable name="kappa_GLUT2" units="pL_per_s" interface="public"/>
+    <variable name="area" units="mm2" interface="public" id="v83toq09x"/>
+    <variable name="v_GLUT2" units="fmol_per_mm2_per_s" interface="public"/>
+    <variable name="Scale_GLUT2" units="dim" interface="public"/>
+    <variable name="v_GLUT2_o" units="fmol_per_mm2_per_s" interface="public" id="vfvt092jj"/>
+    <variable name="v_GLUT2_i" units="fmol_per_mm2_per_s" interface="public" id="v9c72o5p5"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>Phi_GLUT2</ci>
+        <apply>
+          <plus/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <divide/>
+            <ci>c_Glc_i</ci>
+            <ci>K_i</ci>
+          </apply>
+          <apply>
+            <divide/>
+            <ci>c_Glc_o</ci>
+            <ci>K_o</ci>
+          </apply>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>c_Glc_i</ci>
+              <ci>c_Glc_o</ci>
+            </apply>
+            <ci>k_io</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>v_GLUT2_raw</ci>
+        <apply>
+          <times/>
+          <apply>
+            <divide/>
+            <ci>kappa_GLUT2</ci>
+            <apply>
+              <times/>
+              <ci>Phi_GLUT2</ci>
+              <ci>area</ci>
+            </apply>
+          </apply>
+          <apply>
+            <minus/>
+            <ci>c_Glc_i</ci>
+            <ci>c_Glc_o</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>v_GLUT2</ci>
+        <apply>
+          <times/>
+          <ci>v_GLUT2_raw</ci>
+          <ci>Scale_GLUT2</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>v_GLUT2_o</ci>
+        <ci>v_GLUT2</ci>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>v_GLUT2_i</ci>
+        <apply>
+          <minus/>
+          <ci>v_GLUT2_o</ci>
+        </apply>
+      </apply>
+    </math>
+  </component>
+</model>

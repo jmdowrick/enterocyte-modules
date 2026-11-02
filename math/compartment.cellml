@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.cellml.org/cellml/2.0#" name="compartment">
+  <units name="dim">
+    <unit units="dimensionless"/>
+  </units>
+  <units name="mM">
+    <unit units="mole" prefix="milli"/>
+    <unit units="litre" exponent="-1"/>
+  </units>
+  <units name="fmol_per_mm2_per_s">
+    <unit units="fmol"/>
+    <unit units="mm2" exponent="-1"/>
+    <unit units="second" exponent="-1"/>
+  </units>
+  <units name="mm2">
+    <unit units="metre" prefix="milli" exponent="2"/>
+  </units>
+  <units name="fmol">
+    <unit units="mole" prefix="femto"/>
+  </units>
+  <units name="mm2_per_pL">
+    <unit units="metre" prefix="milli" exponent="2"/>
+    <unit units="litre" prefix="pico" exponent="-1"/>
+  </units>
+  <units name="pL">
+    <unit units="litre" prefix="pico"/>
+  </units>
+  <component name="compartment">
+    <variable name="t" units="second" interface="public"/>
+    <variable name="c_Na_init" units="mM" interface="public"/>
+    <variable name="c_Na" units="mM" initial_value="c_Na_init" interface="public" id="vxtcbzqsk"/>
+    <variable name="c_Glc_init" units="mM" interface="public"/>
+    <variable name="c_Glc" units="mM" initial_value="c_Glc_init" interface="public" id="v4oa7q2cp"/>
+    <variable name="c_K_init" units="mM" interface="public"/>
+    <variable name="c_K" units="mM" initial_value="c_K_init" interface="public" id="vcyw3564x"/>
+    <variable name="c_ATP" units="mM" interface="public" id="vy01tmy4r"/>
+    <variable name="c_ADP" units="mM" interface="public" id="v7ew6ixyr"/>
+    <variable name="c_Pi" units="mM" interface="public" id="v7iahk7u1"/>
+    <variable name="c_H" units="mM" interface="public" id="vvamlxr8p"/>
+    <variable name="pH" units="dim" interface="public"/>
+    <variable name="q_Na" units="fmol" interface="public"/>
+    <variable name="q_Glc" units="fmol" interface="public"/>
+    <variable name="q_K" units="fmol" interface="public"/>
+    <variable name="q_ATP" units="fmol" interface="public"/>
+    <variable name="q_ADP" units="fmol" interface="public"/>
+    <variable name="q_Pi" units="fmol" interface="public"/>
+    <variable name="q_H" units="fmol" interface="public"/>
+    <variable name="v_Na" units="fmol_per_mm2_per_s" interface="public" id="vj5ag9gtv"/>
+    <variable name="v_K" units="fmol_per_mm2_per_s" interface="public" id="vwv4568eb"/>
+    <variable name="v_Glc" units="fmol_per_mm2_per_s" interface="public" id="v5esqhg0h"/>
+    <variable name="Gamma" units="mm2_per_pL" interface="public"/>
+    <variable name="area" units="mm2" interface="public" id="vl8iyqxiu"/>
+    <variable name="volume" units="pL" interface="public" id="vblbaso2n"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>Gamma</ci>
+        <apply>
+          <divide/>
+          <ci>area</ci>
+          <ci>volume</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>c_H</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="mM" type="e-notation">1<sep/>3</cn>
+          <apply>
+            <power/>
+            <cn cellml:units="dim">10</cn>
+            <apply>
+              <minus/>
+              <ci>pH</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>q_Na</ci>
+        <apply>
+          <times/>
+          <ci>c_Na</ci>
+          <ci>volume</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>q_Glc</ci>
+        <apply>
+          <times/>
+          <ci>c_Glc</ci>
+          <ci>volume</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>q_K</ci>
+        <apply>
+          <times/>
+          <ci>c_K</ci>
+          <ci>volume</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>q_ATP</ci>
+        <apply>
+          <times/>
+          <ci>c_ATP</ci>
+          <ci>volume</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>q_ADP</ci>
+        <apply>
+          <times/>
+          <ci>c_ADP</ci>
+          <ci>volume</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>q_Pi</ci>
+        <apply>
+          <times/>
+          <ci>c_Pi</ci>
+          <ci>volume</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>q_H</ci>
+        <apply>
+          <times/>
+          <ci>c_H</ci>
+          <ci>volume</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>c_Na</ci>
+        </apply>
+        <apply>
+          <times/>
+          <ci>Gamma</ci>
+          <ci>v_Na</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>c_Glc</ci>
+        </apply>
+        <apply>
+          <times/>
+          <ci>Gamma</ci>
+          <ci>v_Glc</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>c_K</ci>
+        </apply>
+        <apply>
+          <times/>
+          <ci>Gamma</ci>
+          <ci>v_K</ci>
+        </apply>
+      </apply>
+    </math>
+  </component>
+</model>
