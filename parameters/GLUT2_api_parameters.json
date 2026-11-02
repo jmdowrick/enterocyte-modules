@@ -1,0 +1,11 @@
+{
+ "schema_version": 1,
+ "c_Glc_i": {"value": 5, "units": "mM", "data_reference": "phlynx", "sourced": "no"},
+ "K_i": {"value": 1.609, "units": "mM", "data_reference": "phlynx", "sourced": "no"},
+ "c_Glc_o": {"value": 10, "units": "mM", "data_reference": "phlynx", "sourced": "no"},
+ "K_o": {"value": 0.1, "units": "mM", "data_reference": "phlynx", "sourced": "no"},
+ "k_io": {"value": 1.2959, "units": "mM2", "data_reference": "phlynx", "sourced": "no"},
+ "kappa_GLUT2": {"value": 0.0442, "units": "pL_per_s", "data_reference": "phlynx", "sourced": "no"},
+ "area": {"value": 0.001, "units": "mm2", "data_reference": "phlynx", "sourced": "no"},
+ "Scale_GLUT2": {"value": 186, "units": "dim", "data_reference": "phlynx", "sourced": "no"}
+}
