@@ -1,68 +1,84 @@
 # The NKA transporter; _i is the cytoplasm, _o the extracellular side.
 @prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
-@prefix opb: <http://identifiers.org/opb/OPB_> .
-@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
-@prefix go: <http://purl.obolibrary.org/obo/GO_> .
-@prefix sbo: <http://purl.obolibrary.org/obo/SBO_> .
-@prefix uniprot: <http://identifiers.org/uniprot/> .
+@prefix semsim: <http://bime.uw.edu/semsim/> .
+@prefix opb: <https://identifiers.org/opb/OPB_> .
+@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .
+@prefix go: <https://identifiers.org/go/GO:> .
+@prefix sbo: <https://identifiers.org/sbo/SBO:> .
+@prefix uniprot: <https://identifiers.org/uniprot/> .
 @prefix m: <./NKA.cellml#> .
 @prefix local: <./NKA.ttl#> .
 
 m:NKA bqbiol:is uniprot:P05023 ;
     bqbiol:isVersionOf go:0005391 ;
     bqbiol:isVersionOf go:0006096 .
+local:entity_self bqbiol:is uniprot:P05023 ;
+    bqbiol:isPartOf go:0005886 .
+local:outside bqbiol:is go:0005576 .
+local:inside bqbiol:is go:0005737 .
 
 m:vcdmrbcv2 bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vcdmrbcv2 .
-local:entity_vcdmrbcv2 bqbiol:is chebi:29101 , go:0005576 .
+    bqbiol:isPropertyOf local:Na_out .
+local:Na_out bqbiol:is chebi:29101 ;
+    bqbiol:isPartOf local:outside .
 m:v5eu9sad5 bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_v5eu9sad5 .
-local:entity_v5eu9sad5 bqbiol:is chebi:29103 , go:0005576 .
+    bqbiol:isPropertyOf local:K_out .
+local:K_out bqbiol:is chebi:29103 ;
+    bqbiol:isPartOf local:outside .
 m:vhdqyqaec bqbiol:isVersionOf opb:00154 ;
-    bqbiol:isPropertyOf local:entity_vhdqyqaec .
-local:entity_vhdqyqaec bqbiol:is go:0005576 .
+    bqbiol:isPropertyOf local:outside .
 m:vorzekzrl bqbiol:isVersionOf opb:00154 ;
-    bqbiol:isPropertyOf local:entity_vorzekzrl .
-local:entity_vorzekzrl bqbiol:is go:0005737 .
+    bqbiol:isPropertyOf local:inside .
 m:vtwj4l11i bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vtwj4l11i .
-local:entity_vtwj4l11i bqbiol:is chebi:29101 , go:0005737 .
+    bqbiol:isPropertyOf local:Na_in .
+local:Na_in bqbiol:is chebi:29101 ;
+    bqbiol:isPartOf local:inside .
 m:vde5xfswr bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vde5xfswr .
-local:entity_vde5xfswr bqbiol:is chebi:29103 , go:0005737 .
+    bqbiol:isPropertyOf local:K_in .
+local:K_in bqbiol:is chebi:29103 ;
+    bqbiol:isPartOf local:inside .
 m:vnsyv8q9l bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vnsyv8q9l .
-local:entity_vnsyv8q9l bqbiol:is chebi:15378 , go:0005737 .
+    bqbiol:isPropertyOf local:H_in .
+local:H_in bqbiol:is chebi:15378 ;
+    bqbiol:isPartOf local:inside .
 m:vfo61piys bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vfo61piys .
-local:entity_vfo61piys bqbiol:is chebi:16761 , go:0005737 .
+    bqbiol:isPropertyOf local:ADP_in .
+local:ADP_in bqbiol:is chebi:16761 ;
+    bqbiol:isPartOf local:inside .
 m:vamiydje5 bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vamiydje5 .
-local:entity_vamiydje5 bqbiol:is chebi:43474 , go:0005737 .
+    bqbiol:isPropertyOf local:Pi_in .
+local:Pi_in bqbiol:is chebi:43474 ;
+    bqbiol:isPartOf local:inside .
 m:vb70bkadw bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vb70bkadw .
-local:entity_vb70bkadw bqbiol:is chebi:15422 , go:0005737 .
+    bqbiol:isPropertyOf local:ATP_in .
+local:ATP_in bqbiol:is chebi:15422 ;
+    bqbiol:isPartOf local:inside .
 m:vekyxzuo0 bqbiol:isVersionOf opb:00295 ;
-    bqbiol:isPropertyOf local:entity_vekyxzuo0 .
-local:entity_vekyxzuo0 bqbiol:is go:0005886 .
+    bqbiol:isPropertyOf local:plasma_membrane .
+local:plasma_membrane bqbiol:is go:0005886 .
 m:v61lrw8b5 bqbiol:isVersionOf opb:00506 ;
-    bqbiol:isPropertyOf local:entity_v61lrw8b5 .
-local:entity_v61lrw8b5 bqbiol:is go:0005886 .
+    bqbiol:isPropertyOf local:plasma_membrane .
 m:vptaxby8s bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_vptaxby8s .
-local:entity_vptaxby8s bqbiol:is chebi:17634 , go:0005737 .
+    bqbiol:isPropertyOf local:process_vptaxby8s .
+local:process_vptaxby8s semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] .
+local:Glc_in bqbiol:is chebi:17634 ;
+    bqbiol:isPartOf local:inside .
 m:v37psudg5 bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_v37psudg5 .
-local:entity_v37psudg5 bqbiol:is chebi:29101 , go:0005737 .
+    bqbiol:isPropertyOf local:process_v37psudg5 .
+local:process_v37psudg5 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:Na_out ] ;
+    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Na_in ] .
 m:vx1p9wrux bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_vx1p9wrux .
-local:entity_vx1p9wrux bqbiol:is chebi:29103 , go:0005737 .
+    bqbiol:isPropertyOf local:process_vx1p9wrux .
+local:process_vx1p9wrux semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_out ] ;
+    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_in ] .
 m:vuuyeeqku bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_vuuyeeqku .
-local:entity_vuuyeeqku bqbiol:is chebi:29101 , go:0005576 .
+    bqbiol:isPropertyOf local:process_vuuyeeqku .
+local:process_vuuyeeqku semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:Na_in ] ;
+    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Na_out ] .
 m:vrdncxnf9 bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_vrdncxnf9 .
-local:entity_vrdncxnf9 bqbiol:is chebi:29103 , go:0005576 .
+    bqbiol:isPropertyOf local:process_vrdncxnf9 .
+local:process_vrdncxnf9 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_in ] ;
+    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_out ] .
 m:vqo8cs21i bqbiol:isVersionOf opb:00318 ;
-    bqbiol:isPropertyOf local:entity_vqo8cs21i .
-local:entity_vqo8cs21i bqbiol:is go:0005886 .
+    bqbiol:isPropertyOf local:process_vqo8cs21i .
+local:process_vqo8cs21i semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:plasma_membrane ] .

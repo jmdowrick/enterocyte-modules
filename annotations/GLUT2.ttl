@@ -1,28 +1,37 @@
 # The GLUT2 transporter; _i is the cytoplasm, _o the extracellular side.
 @prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
-@prefix opb: <http://identifiers.org/opb/OPB_> .
-@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
-@prefix go: <http://purl.obolibrary.org/obo/GO_> .
-@prefix sbo: <http://purl.obolibrary.org/obo/SBO_> .
-@prefix uniprot: <http://identifiers.org/uniprot/> .
+@prefix semsim: <http://bime.uw.edu/semsim/> .
+@prefix opb: <https://identifiers.org/opb/OPB_> .
+@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .
+@prefix go: <https://identifiers.org/go/GO:> .
+@prefix sbo: <https://identifiers.org/sbo/SBO:> .
+@prefix uniprot: <https://identifiers.org/uniprot/> .
 @prefix m: <./GLUT2.cellml#> .
 @prefix local: <./GLUT2.ttl#> .
 
 m:GLUT2 bqbiol:is uniprot:P11168 ;
     bqbiol:isVersionOf go:0055056 .
+local:entity_self bqbiol:is uniprot:P11168 ;
+    bqbiol:isPartOf go:0005886 .
+local:outside bqbiol:is go:0005576 .
+local:inside bqbiol:is go:0005737 .
 
 m:vfwllf3dn bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vfwllf3dn .
-local:entity_vfwllf3dn bqbiol:is chebi:17634 , go:0005737 .
+    bqbiol:isPropertyOf local:Glc_in .
+local:Glc_in bqbiol:is chebi:17634 ;
+    bqbiol:isPartOf local:inside .
 m:v5f0sesm6 bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_v5f0sesm6 .
-local:entity_v5f0sesm6 bqbiol:is chebi:17634 , go:0005576 .
+    bqbiol:isPropertyOf local:Glc_out .
+local:Glc_out bqbiol:is chebi:17634 ;
+    bqbiol:isPartOf local:outside .
 m:v83toq09x bqbiol:isVersionOf opb:00295 ;
-    bqbiol:isPropertyOf local:entity_v83toq09x .
-local:entity_v83toq09x bqbiol:is go:0005886 .
+    bqbiol:isPropertyOf local:plasma_membrane .
+local:plasma_membrane bqbiol:is go:0005886 .
 m:v9c72o5p5 bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_v9c72o5p5 .
-local:entity_v9c72o5p5 bqbiol:is chebi:17634 , go:0005737 .
+    bqbiol:isPropertyOf local:process_v9c72o5p5 .
+local:process_v9c72o5p5 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:Glc_out ] ;
+    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] .
 m:vfvt092jj bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_vfvt092jj .
-local:entity_vfvt092jj bqbiol:is chebi:17634 , go:0005576 .
+    bqbiol:isPropertyOf local:process_vfvt092jj .
+local:process_vfvt092jj semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] ;
+    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_out ] .

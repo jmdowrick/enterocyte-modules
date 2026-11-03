@@ -1,34 +1,42 @@
 # The Kir transporter; _i is the cytoplasm, _o the extracellular side.
 @prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
-@prefix opb: <http://identifiers.org/opb/OPB_> .
-@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
-@prefix go: <http://purl.obolibrary.org/obo/GO_> .
-@prefix sbo: <http://purl.obolibrary.org/obo/SBO_> .
-@prefix uniprot: <http://identifiers.org/uniprot/> .
+@prefix semsim: <http://bime.uw.edu/semsim/> .
+@prefix opb: <https://identifiers.org/opb/OPB_> .
+@prefix chebi: <https://identifiers.org/chebi/CHEBI:> .
+@prefix go: <https://identifiers.org/go/GO:> .
+@prefix sbo: <https://identifiers.org/sbo/SBO:> .
+@prefix uniprot: <https://identifiers.org/uniprot/> .
 @prefix m: <./Kir.cellml#> .
 @prefix local: <./Kir.ttl#> .
 
 m:Kir bqbiol:is uniprot:O60928 ;
     bqbiol:isVersionOf go:0005242 .
+local:entity_self bqbiol:is uniprot:O60928 ;
+    bqbiol:isPartOf go:0005886 .
+local:outside bqbiol:is go:0005576 .
+local:inside bqbiol:is go:0005737 .
 
 m:vih9ubdu7 bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_vih9ubdu7 .
-local:entity_vih9ubdu7 bqbiol:is chebi:29103 , go:0005737 .
+    bqbiol:isPropertyOf local:K_in .
+local:K_in bqbiol:is chebi:29103 ;
+    bqbiol:isPartOf local:inside .
 m:v3sjozu5o bqbiol:isVersionOf opb:00340 ;
-    bqbiol:isPropertyOf local:entity_v3sjozu5o .
-local:entity_v3sjozu5o bqbiol:is chebi:29103 , go:0005576 .
+    bqbiol:isPropertyOf local:K_out .
+local:K_out bqbiol:is chebi:29103 ;
+    bqbiol:isPartOf local:outside .
 m:vuhgy08cr bqbiol:isVersionOf opb:00295 ;
-    bqbiol:isPropertyOf local:entity_vuhgy08cr .
-local:entity_vuhgy08cr bqbiol:is go:0005886 .
+    bqbiol:isPropertyOf local:plasma_membrane .
+local:plasma_membrane bqbiol:is go:0005886 .
 m:vprh1t4fr bqbiol:isVersionOf opb:00506 ;
-    bqbiol:isPropertyOf local:entity_vprh1t4fr .
-local:entity_vprh1t4fr bqbiol:is go:0005886 .
+    bqbiol:isPropertyOf local:plasma_membrane .
 m:vb0p87qrp bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_vb0p87qrp .
-local:entity_vb0p87qrp bqbiol:is chebi:29103 , go:0005737 .
+    bqbiol:isPropertyOf local:process_vb0p87qrp .
+local:process_vb0p87qrp semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_out ] ;
+    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_in ] .
 m:vp55np02w bqbiol:isVersionOf opb:00592 ;
-    bqbiol:isPropertyOf local:entity_vp55np02w .
-local:entity_vp55np02w bqbiol:is chebi:29103 , go:0005576 .
+    bqbiol:isPropertyOf local:process_vp55np02w .
+local:process_vp55np02w semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_in ] ;
+    semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_out ] .
 m:v9xhn7nv1 bqbiol:isVersionOf opb:00318 ;
-    bqbiol:isPropertyOf local:entity_v9xhn7nv1 .
-local:entity_v9xhn7nv1 bqbiol:is go:0005886 .
+    bqbiol:isPropertyOf local:process_v9xhn7nv1 .
+local:process_v9xhn7nv1 semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:plasma_membrane ] .
