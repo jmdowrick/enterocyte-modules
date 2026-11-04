@@ -19,7 +19,7 @@ The model has six math definitions (module types) and nine instances:
 
 ```
 math/            <module_type>.cellml                  one CellML 2.0 model per module type: its units, then its one component
-annotations/     <module_type>.ttl                     RDF annotations of that math, keyed by the CellML variable ids
+math/     <module_type>.ttl                     RDF annotations of that math, keyed by the CellML variable ids
 configurations/  <module_type>_<instance>_modules_config.json
                                                        one config per instance (module_subtype = instance name):
                                                        its ports, its variables and their types, the math file
