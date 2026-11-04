@@ -40,13 +40,13 @@ m:vvamlxr8p bqbiol:isVersionOf opb:00340 ;
     bqbiol:isPropertyOf local:H_self .
 local:H_self bqbiol:is chebi:15378 ;
     bqbiol:isPartOf local:entity_self .
-m:v5esqhg0h bqbiol:isVersionOf opb:00592 ;
+m:v5esqhg0h bqbiol:isVersionOf opb:00593 ;
     bqbiol:isPropertyOf local:process_v5esqhg0h .
 local:process_v5esqhg0h semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_self ] .
-m:vj5ag9gtv bqbiol:isVersionOf opb:00592 ;
+m:vj5ag9gtv bqbiol:isVersionOf opb:00593 ;
     bqbiol:isPropertyOf local:process_vj5ag9gtv .
 local:process_vj5ag9gtv semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Na_self ] .
-m:vwv4568eb bqbiol:isVersionOf opb:00592 ;
+m:vwv4568eb bqbiol:isVersionOf opb:00593 ;
     bqbiol:isPropertyOf local:process_vwv4568eb .
 local:process_vwv4568eb semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_self ] .
 m:vblbaso2n bqbiol:isVersionOf opb:00154 ;
