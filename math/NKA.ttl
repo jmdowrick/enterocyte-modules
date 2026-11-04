@@ -58,24 +58,24 @@ m:vekyxzuo0 bqbiol:isVersionOf opb:00295 ;
 local:plasma_membrane bqbiol:is go:0005886 .
 m:v61lrw8b5 bqbiol:isVersionOf opb:00506 ;
     bqbiol:isPropertyOf local:plasma_membrane .
-m:vptaxby8s bqbiol:isVersionOf opb:00593 ;
+m:vptaxby8s bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_vptaxby8s .
 local:process_vptaxby8s semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] .
 local:Glc_in bqbiol:is chebi:17634 ;
     bqbiol:isPartOf local:inside .
-m:v37psudg5 bqbiol:isVersionOf opb:00593 ;
+m:v37psudg5 bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_v37psudg5 .
 local:process_v37psudg5 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:Na_out ] ;
     semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Na_in ] .
-m:vx1p9wrux bqbiol:isVersionOf opb:00593 ;
+m:vx1p9wrux bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_vx1p9wrux .
 local:process_vx1p9wrux semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_out ] ;
     semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_in ] .
-m:vuuyeeqku bqbiol:isVersionOf opb:00593 ;
+m:vuuyeeqku bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_vuuyeeqku .
 local:process_vuuyeeqku semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:Na_in ] ;
     semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Na_out ] .
-m:vrdncxnf9 bqbiol:isVersionOf opb:00593 ;
+m:vrdncxnf9 bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_vrdncxnf9 .
 local:process_vrdncxnf9 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:K_in ] ;
     semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:K_out ] .

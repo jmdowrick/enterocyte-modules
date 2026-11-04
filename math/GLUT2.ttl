@@ -27,11 +27,11 @@ local:Glc_out bqbiol:is chebi:17634 ;
 m:v83toq09x bqbiol:isVersionOf opb:00295 ;
     bqbiol:isPropertyOf local:plasma_membrane .
 local:plasma_membrane bqbiol:is go:0005886 .
-m:v9c72o5p5 bqbiol:isVersionOf opb:00593 ;
+m:v9c72o5p5 bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_v9c72o5p5 .
 local:process_v9c72o5p5 semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:Glc_out ] ;
     semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] .
-m:vfvt092jj bqbiol:isVersionOf opb:00593 ;
+m:vfvt092jj bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_vfvt092jj .
 local:process_vfvt092jj semsim:hasSourceParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] ;
     semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_out ] .
