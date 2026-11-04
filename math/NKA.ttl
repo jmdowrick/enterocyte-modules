@@ -10,8 +10,7 @@
 @prefix local: <./NKA.ttl#> .
 
 m:NKA bqbiol:is uniprot:P05023 ;
-    bqbiol:isVersionOf go:0005391 ;
-    bqbiol:isVersionOf go:0006096 .
+    bqbiol:isVersionOf go:0005391 .
 local:entity_self bqbiol:is uniprot:P05023 ;
     bqbiol:isPartOf go:0005886 .
 local:outside bqbiol:is go:0005576 .
@@ -60,7 +59,8 @@ m:v61lrw8b5 bqbiol:isVersionOf opb:00506 ;
     bqbiol:isPropertyOf local:plasma_membrane .
 m:vptaxby8s bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_vptaxby8s .
-local:process_vptaxby8s semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] .
+local:process_vptaxby8s semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] ;
+    bqbiol:isVersionOf opb:0006096 .
 local:Glc_in bqbiol:is chebi:17634 ;
     bqbiol:isPartOf local:inside .
 m:v37psudg5 bqbiol:isVersionOf opb:00592 ;
