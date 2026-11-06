@@ -34,7 +34,7 @@ local:ADP_self bqbiol:is chebi:16761 ;
     bqbiol:isPartOf local:entity_self .
 m:v7iahk7u1 bqbiol:isVersionOf opb:00340 ;
     bqbiol:isPropertyOf local:Pi_self .
-local:Pi_self bqbiol:is chebi:43474 ;
+local:Pi_self bqbiol:is chebi:24838 ;
     bqbiol:isPartOf local:entity_self .
 m:vvamlxr8p bqbiol:isVersionOf opb:00340 ;
     bqbiol:isPropertyOf local:H_self .
