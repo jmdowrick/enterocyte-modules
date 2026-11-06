@@ -46,7 +46,7 @@ local:ADP_in bqbiol:is chebi:16761 ;
     bqbiol:isPartOf local:inside .
 m:vamiydje5 bqbiol:isVersionOf opb:00340 ;
     bqbiol:isPropertyOf local:Pi_in .
-local:Pi_in bqbiol:is chebi:43474 ;
+local:Pi_in bqbiol:is chebi:24838 ;
     bqbiol:isPartOf local:inside .
 m:vb70bkadw bqbiol:isVersionOf opb:00340 ;
     bqbiol:isPropertyOf local:ATP_in .
