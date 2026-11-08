@@ -3,8 +3,7 @@
  "global": {
   "F": {"value": 96485.3321, "units": "C_per_mol", "data_reference": "phlynx", "sourced": "no"},
   "RTF": {"value": 0.0265399096864, "units": "J_per_C", "data_reference": "phlynx", "sourced": "no"},
-  "RT": {"value": 2560.712, "units": "J_per_mol", "data_reference": "phlynx", "sourced": "no"},
-  "Scale_NKA": {"value": 1, "units": "dim", "data_reference": "phlynx", "sourced": "no"}
+  "RT": {"value": 2560.712, "units": "J_per_mol", "data_reference": "phlynx", "sourced": "no"}
  },
  "c_Na_o": {"value": 140, "units": "mM", "data_reference": "phlynx", "sourced": "no"},
  "W_o": {"value": 1, "units": "pL", "data_reference": "phlynx", "sourced": "no"},
@@ -39,5 +38,6 @@
  "kappa_2_NKA": {"value": 51.1, "units": "fmol_per_s", "data_reference": "phlynx", "sourced": "no"},
  "kappa_3_NKA": {"value": 469.3, "units": "fmol_per_s", "data_reference": "phlynx", "sourced": "no"},
  "kappa_4_NKA": {"value": 619100.0, "units": "fmol_per_s", "data_reference": "phlynx", "sourced": "no"},
- "kappa_5_NKA": {"value": 35.87, "units": "fmol_per_s", "data_reference": "phlynx", "sourced": "no"}
+ "kappa_5_NKA": {"value": 35.87, "units": "fmol_per_s", "data_reference": "phlynx", "sourced": "no"},
+ "Scale_NKA": {"value": 1, "units": "dim", "data_reference": "phlynx", "sourced": "no"}
 }

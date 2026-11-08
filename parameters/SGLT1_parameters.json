@@ -2,8 +2,7 @@
  "schema_version": 1,
  "global": {
   "F": {"value": 96485.3321, "units": "C_per_mol", "data_reference": "phlynx", "sourced": "no"},
-  "RTF": {"value": 0.0265399096864, "units": "J_per_C", "data_reference": "phlynx", "sourced": "no"},
-  "Scale_SGLT1": {"value": 1.86, "units": "dim", "data_reference": "phlynx", "sourced": "no"}
+  "RTF": {"value": 0.0265399096864, "units": "J_per_C", "data_reference": "phlynx", "sourced": "no"}
  },
  "c_Na_o": {"value": 145, "units": "mM", "data_reference": "phlynx", "sourced": "no"},
  "W_o": {"value": 2, "units": "pL", "data_reference": "phlynx", "sourced": "no"},
@@ -27,5 +26,6 @@
  "K_5": {"value": 905, "units": "per_fmol", "data_reference": "phlynx", "sourced": "no"},
  "K_4": {"value": 321, "units": "per_fmol", "data_reference": "phlynx", "sourced": "no"},
  "kappa": {"value": 3.5, "units": "fmol_per_s", "data_reference": "phlynx", "sourced": "no"},
- "area": {"value": 0.001, "units": "mm2", "data_reference": "phlynx", "sourced": "no"}
+ "area": {"value": 0.001, "units": "mm2", "data_reference": "phlynx", "sourced": "no"},
+ "Scale_SGLT1": {"value": 1.86, "units": "dim", "data_reference": "phlynx", "sourced": "no"}
 }
