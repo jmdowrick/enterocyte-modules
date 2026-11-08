@@ -60,7 +60,7 @@ m:v61lrw8b5 bqbiol:isVersionOf opb:00506 ;
 m:vptaxby8s bqbiol:isVersionOf opb:00592 ;
     bqbiol:isPropertyOf local:process_vptaxby8s .
 local:process_vptaxby8s semsim:hasSinkParticipant [ semsim:hasPhysicalEntityReference local:Glc_in ] ;
-    bqbiol:isVersionOf opb:0006096 .
+    bqbiol:isVersionOf go:0006096 .
 local:Glc_in bqbiol:is chebi:17634 ;
     bqbiol:isPartOf local:inside .
 m:v37psudg5 bqbiol:isVersionOf opb:00592 ;
